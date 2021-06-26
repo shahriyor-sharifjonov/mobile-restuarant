@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Restuarant Demo</title>
+  <link rel="stylesheet" href="styles/all.min.css">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="container">
+  <header class="header">
+    <a href="#!" class="header__button">
+      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__button__svg">
+        <rect width="60" height="60" rx="12" fill="#FFF7F7"/>
+        <circle cx="18.5" cy="18.5" r="7.5" fill="#333333"/>
+        <circle cx="18.5" cy="41.5" r="7.5" fill="#333333"/>
+        <circle cx="41.5" cy="41.5" r="7.5" fill="#333333"/>
+        <circle cx="41.5" cy="18.5" r="7.5" fill="#FF3434"/>
+      </svg>
+    </a>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-map-marker-alt header__dropdown__loc"></i>
+        <p class="header__dropdown__p">New York</p>
+        <i class="fas fa-arrow-down header__dropdown__down"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">California</a></li>
+        <li><a class="dropdown-item" href="#">Chicago</a></li>
+        <li><a class="dropdown-item" href="#">San Francisco</a></li>
+      </ul>
+    </div>
+    <div class="header__avatar">
+      <img src="images/avatar.png" alt="">
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__slider">
+      <a href="#!" class="main__slider__link">
+        <div class="main__slider__item active">
+          <div class="main__slider__img">
+            <img src="images/burger.svg" alt="" class="main__slider__img__img">
+          </div>
+          <p class="main__slider__p">Burger</p>
+        </div>
+      </a>
+      <a href="#!" class="main__slider__link">
+        <div class="main__slider__item">
+          <div class="main__slider__img">
+            <img src="images/pizza.svg" alt="" class="main__slider__img__img">
+          </div>
+          <p class="main__slider__p">Pizza</p>
+        </div>
+      </a>
+      <a href="#!" class="main__slider__link">
+        <div class="main__slider__item">
+          <div class="main__slider__img">
+            <img src="images/drink.svg" alt="" class="main__slider__img__img">
+          </div>
+          <p class="main__slider__p">Juice</p>
+        </div>
+      </a>
+      <a href="#!" class="main__slider__link">
+        <div class="main__slider__item">
+          <div class="main__slider__img">
+            <img src="images/coffee.svg" alt="" class="main__slider__img__img">
+          </div>
+          <p class="main__slider__p">Coffee</p>
+        </div>
+      </a>
+    </div>
+    <div class="popular">
+      <div class="popular__header">
+        <h1 class="title popular__title">Popular Now</h1>
+        <a href="#!" class="popular__link">View All <i class="fas fa-arrow-right popular__link__i"></i></a>
+      </div>
+      <div class="popular__slider">
+        <a href="#!" class="popular__slider__link">
+          <div class="popular__slider__item">
+            <div class="hot">
+              <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M1.27059 5.85234C1.27059 5.85234 1.74469 6.54884 2.73834 7.13838C2.73834 7.13838 2.0187 1.0563 6.70767 0C5.50634 4.40909 8.2358 5.65252 9.23074 3.32311C10.8923 5.54149 9.63073 7.47691 9.63073 7.47691C10.312 7.57507 10.8843 6.83074 10.8843 6.83074C10.8894 6.92243 10.8923 7.01475 10.8923 7.10773C10.8923 9.80965 8.70197 12 6.00002 12C3.29808 12 1.10773 9.80965 1.10773 7.1077C1.10773 6.67369 1.16454 6.25298 1.27059 5.85234Z" fill="#FF6536"/>
+                  <path d="M10.8843 6.83074C10.8843 6.83074 10.312 7.57507 9.63073 7.47691C9.63073 7.47691 10.8923 5.54149 9.23074 3.32311C8.2358 5.65252 5.50634 4.40909 6.70767 0C6.45654 0.0565781 6.22104 0.127664 6 0.211359V12C8.70195 12 10.8923 9.80965 10.8923 7.1077C10.8923 7.01473 10.8894 6.92243 10.8843 6.83074Z" fill="#FF421D"/>
+                  <path d="M3.85437 9.85445C3.85437 11.0394 4.81498 12 5.99993 12C7.18489 12 8.14549 11.0394 8.14549 9.85445C8.14549 9.22021 7.87032 8.65026 7.43281 8.25747C6.60326 9.38446 5.42112 7.67491 6.3424 6.42648C6.3424 6.42648 3.85437 6.73827 3.85437 9.85445Z" fill="#FBBF00"/>
+                  <path d="M8.14556 9.85445C8.14556 9.22021 7.87038 8.65026 7.43288 8.25747C6.60333 9.38446 5.42119 7.67491 6.34247 6.42648C6.34247 6.42648 6.20728 6.44348 6 6.50889V12C7.18495 12 8.14556 11.0394 8.14556 9.85445Z" fill="#FFA900"/>
+                </g>
+                <defs>
+                  <clippath id="clip0">
+                    <rect width="12" height="12" fill="white"/>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <img src="images/beef-burger.png" alt="beef burger" class="popular__slider__item__img">
+            <h1 class="popular__slider__title">Beef Burger</h1>
+            <div class="popular__slider__desc">
+              <p class="popular__slider__desc__p">Cheesy Mozarella</p>
+              <img src="images/cheese.png" alt="cheese">
+            </div>
+            <div class="popular__slider__price">
+              <p class="popular__slider__price__symbol">$</p>
+              <p class="popular__slider__price__p">6.59</p>
+            </div>
+          </div>
+        </a>
+        <a href="#!" class="popular__slider__link">
+          <div class="popular__slider__item">
+            <div class="hot">
+              <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M1.27059 5.85234C1.27059 5.85234 1.74469 6.54884 2.73834 7.13838C2.73834 7.13838 2.0187 1.0563 6.70767 0C5.50634 4.40909 8.2358 5.65252 9.23074 3.32311C10.8923 5.54149 9.63073 7.47691 9.63073 7.47691C10.312 7.57507 10.8843 6.83074 10.8843 6.83074C10.8894 6.92243 10.8923 7.01475 10.8923 7.10773C10.8923 9.80965 8.70197 12 6.00002 12C3.29808 12 1.10773 9.80965 1.10773 7.1077C1.10773 6.67369 1.16454 6.25298 1.27059 5.85234Z" fill="#FF6536"/>
+                  <path d="M10.8843 6.83074C10.8843 6.83074 10.312 7.57507 9.63073 7.47691C9.63073 7.47691 10.8923 5.54149 9.23074 3.32311C8.2358 5.65252 5.50634 4.40909 6.70767 0C6.45654 0.0565781 6.22104 0.127664 6 0.211359V12C8.70195 12 10.8923 9.80965 10.8923 7.1077C10.8923 7.01473 10.8894 6.92243 10.8843 6.83074Z" fill="#FF421D"/>
+                  <path d="M3.85437 9.85445C3.85437 11.0394 4.81498 12 5.99993 12C7.18489 12 8.14549 11.0394 8.14549 9.85445C8.14549 9.22021 7.87032 8.65026 7.43281 8.25747C6.60326 9.38446 5.42112 7.67491 6.3424 6.42648C6.3424 6.42648 3.85437 6.73827 3.85437 9.85445Z" fill="#FBBF00"/>
+                  <path d="M8.14556 9.85445C8.14556 9.22021 7.87038 8.65026 7.43288 8.25747C6.60333 9.38446 5.42119 7.67491 6.34247 6.42648C6.34247 6.42648 6.20728 6.44348 6 6.50889V12C7.18495 12 8.14556 11.0394 8.14556 9.85445Z" fill="#FFA900"/>
+                </g>
+                <defs>
+                  <clippath id="clip1">
+                    <rect width="12" height="12" fill="white"/>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <img src="images/cappucino.png" alt="beef burger" class="popular__slider__item__img">
+            <h1 class="popular__slider__title">Cappucino</h1>
+            <div class="popular__slider__desc">
+              <p class="popular__slider__desc__p">Coffee</p>
+              <img src="images/cheese.png" alt="cheese">
+            </div>
+            <div class="popular__slider__price">
+              <p class="popular__slider__price__symbol">$</p>
+              <p class="popular__slider__price__p">6.59</p>
+            </div>
+          </div>
+        </a>
+        <a href="#!" class="popular__slider__link">
+          <div class="popular__slider__item">
+            <div class="hot">
+              <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M1.27059 5.85234C1.27059 5.85234 1.74469 6.54884 2.73834 7.13838C2.73834 7.13838 2.0187 1.0563 6.70767 0C5.50634 4.40909 8.2358 5.65252 9.23074 3.32311C10.8923 5.54149 9.63073 7.47691 9.63073 7.47691C10.312 7.57507 10.8843 6.83074 10.8843 6.83074C10.8894 6.92243 10.8923 7.01475 10.8923 7.10773C10.8923 9.80965 8.70197 12 6.00002 12C3.29808 12 1.10773 9.80965 1.10773 7.1077C1.10773 6.67369 1.16454 6.25298 1.27059 5.85234Z" fill="#FF6536"/>
+                  <path d="M10.8843 6.83074C10.8843 6.83074 10.312 7.57507 9.63073 7.47691C9.63073 7.47691 10.8923 5.54149 9.23074 3.32311C8.2358 5.65252 5.50634 4.40909 6.70767 0C6.45654 0.0565781 6.22104 0.127664 6 0.211359V12C8.70195 12 10.8923 9.80965 10.8923 7.1077C10.8923 7.01473 10.8894 6.92243 10.8843 6.83074Z" fill="#FF421D"/>
+                  <path d="M3.85437 9.85445C3.85437 11.0394 4.81498 12 5.99993 12C7.18489 12 8.14549 11.0394 8.14549 9.85445C8.14549 9.22021 7.87032 8.65026 7.43281 8.25747C6.60326 9.38446 5.42112 7.67491 6.3424 6.42648C6.3424 6.42648 3.85437 6.73827 3.85437 9.85445Z" fill="#FBBF00"/>
+                  <path d="M8.14556 9.85445C8.14556 9.22021 7.87038 8.65026 7.43288 8.25747C6.60333 9.38446 5.42119 7.67491 6.34247 6.42648C6.34247 6.42648 6.20728 6.44348 6 6.50889V12C7.18495 12 8.14556 11.0394 8.14556 9.85445Z" fill="#FFA900"/>
+                </g>
+                <defs>
+                  <clippath id="clip2">
+                    <rect width="12" height="12" fill="white"/>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <img src="images/beef-burger.png" alt="beef burger" class="popular__slider__item__img">
+            <h1 class="popular__slider__title">Beef Burger</h1>
+            <div class="popular__slider__desc">
+              <p class="popular__slider__desc__p">Double Beef</p>
+              <img src="images/cheese.png" alt="cheese">
+            </div>
+            <div class="popular__slider__price">
+              <p class="popular__slider__price__symbol">$</p>
+              <p class="popular__slider__price__p">6.59</p>
+            </div>
+          </div>
+        </a>
+        <a href="#!" class="popular__slider__link">
+          <div class="popular__slider__item">
+            <div class="hot">
+              <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M1.27059 5.85234C1.27059 5.85234 1.74469 6.54884 2.73834 7.13838C2.73834 7.13838 2.0187 1.0563 6.70767 0C5.50634 4.40909 8.2358 5.65252 9.23074 3.32311C10.8923 5.54149 9.63073 7.47691 9.63073 7.47691C10.312 7.57507 10.8843 6.83074 10.8843 6.83074C10.8894 6.92243 10.8923 7.01475 10.8923 7.10773C10.8923 9.80965 8.70197 12 6.00002 12C3.29808 12 1.10773 9.80965 1.10773 7.1077C1.10773 6.67369 1.16454 6.25298 1.27059 5.85234Z" fill="#FF6536"/>
+                  <path d="M10.8843 6.83074C10.8843 6.83074 10.312 7.57507 9.63073 7.47691C9.63073 7.47691 10.8923 5.54149 9.23074 3.32311C8.2358 5.65252 5.50634 4.40909 6.70767 0C6.45654 0.0565781 6.22104 0.127664 6 0.211359V12C8.70195 12 10.8923 9.80965 10.8923 7.1077C10.8923 7.01473 10.8894 6.92243 10.8843 6.83074Z" fill="#FF421D"/>
+                  <path d="M3.85437 9.85445C3.85437 11.0394 4.81498 12 5.99993 12C7.18489 12 8.14549 11.0394 8.14549 9.85445C8.14549 9.22021 7.87032 8.65026 7.43281 8.25747C6.60326 9.38446 5.42112 7.67491 6.3424 6.42648C6.3424 6.42648 3.85437 6.73827 3.85437 9.85445Z" fill="#FBBF00"/>
+                  <path d="M8.14556 9.85445C8.14556 9.22021 7.87038 8.65026 7.43288 8.25747C6.60333 9.38446 5.42119 7.67491 6.34247 6.42648C6.34247 6.42648 6.20728 6.44348 6 6.50889V12C7.18495 12 8.14556 11.0394 8.14556 9.85445Z" fill="#FFA900"/>
+                </g>
+                <defs>
+                  <clippath id="clip3">
+                    <rect width="12" height="12" fill="white"/>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <img src="images/beef-burger.png" alt="beef burger" class="popular__slider__item__img">
+            <h1 class="popular__slider__title">Beef Burger</h1>
+            <div class="popular__slider__desc">
+              <p class="popular__slider__desc__p">Cheesy Mozarella</p>
+              <img src="images/cheese.png" alt="cheese">
+            </div>
+            <div class="popular__slider__price">
+              <p class="popular__slider__price__symbol">$</p>
+              <p class="popular__slider__price__p">6.59</p>
+            </div>
+          </div>
+        </a>
+        <a href="#!" class="popular__slider__link">
+          <div class="popular__slider__item">
+            <div class="hot">
+              <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M1.27059 5.85234C1.27059 5.85234 1.74469 6.54884 2.73834 7.13838C2.73834 7.13838 2.0187 1.0563 6.70767 0C5.50634 4.40909 8.2358 5.65252 9.23074 3.32311C10.8923 5.54149 9.63073 7.47691 9.63073 7.47691C10.312 7.57507 10.8843 6.83074 10.8843 6.83074C10.8894 6.92243 10.8923 7.01475 10.8923 7.10773C10.8923 9.80965 8.70197 12 6.00002 12C3.29808 12 1.10773 9.80965 1.10773 7.1077C1.10773 6.67369 1.16454 6.25298 1.27059 5.85234Z" fill="#FF6536"/>
+                  <path d="M10.8843 6.83074C10.8843 6.83074 10.312 7.57507 9.63073 7.47691C9.63073 7.47691 10.8923 5.54149 9.23074 3.32311C8.2358 5.65252 5.50634 4.40909 6.70767 0C6.45654 0.0565781 6.22104 0.127664 6 0.211359V12C8.70195 12 10.8923 9.80965 10.8923 7.1077C10.8923 7.01473 10.8894 6.92243 10.8843 6.83074Z" fill="#FF421D"/>
+                  <path d="M3.85437 9.85445C3.85437 11.0394 4.81498 12 5.99993 12C7.18489 12 8.14549 11.0394 8.14549 9.85445C8.14549 9.22021 7.87032 8.65026 7.43281 8.25747C6.60326 9.38446 5.42112 7.67491 6.3424 6.42648C6.3424 6.42648 3.85437 6.73827 3.85437 9.85445Z" fill="#FBBF00"/>
+                  <path d="M8.14556 9.85445C8.14556 9.22021 7.87038 8.65026 7.43288 8.25747C6.60333 9.38446 5.42119 7.67491 6.34247 6.42648C6.34247 6.42648 6.20728 6.44348 6 6.50889V12C7.18495 12 8.14556 11.0394 8.14556 9.85445Z" fill="#FFA900"/>
+                </g>
+                <defs>
+                  <clippath id="clip4">
+                    <rect width="12" height="12" fill="white"/>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <img src="images/cappucino.png" alt="beef burger" class="popular__slider__item__img">
+            <h1 class="popular__slider__title">Cappucino</h1>
+            <div class="popular__slider__desc">
+              <p class="popular__slider__desc__p">Coffee</p>
+              <img src="images/cheese.png" alt="cheese">
+            </div>
+            <div class="popular__slider__price">
+              <p class="popular__slider__price__symbol">$</p>
+              <p class="popular__slider__price__p">6.59</p>
+            </div>
+          </div>
+        </a>
+        <a href="#!" class="popular__slider__link">
+          <div class="popular__slider__item">
+            <div class="hot">
+              <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M1.27059 5.85234C1.27059 5.85234 1.74469 6.54884 2.73834 7.13838C2.73834 7.13838 2.0187 1.0563 6.70767 0C5.50634 4.40909 8.2358 5.65252 9.23074 3.32311C10.8923 5.54149 9.63073 7.47691 9.63073 7.47691C10.312 7.57507 10.8843 6.83074 10.8843 6.83074C10.8894 6.92243 10.8923 7.01475 10.8923 7.10773C10.8923 9.80965 8.70197 12 6.00002 12C3.29808 12 1.10773 9.80965 1.10773 7.1077C1.10773 6.67369 1.16454 6.25298 1.27059 5.85234Z" fill="#FF6536"/>
+                  <path d="M10.8843 6.83074C10.8843 6.83074 10.312 7.57507 9.63073 7.47691C9.63073 7.47691 10.8923 5.54149 9.23074 3.32311C8.2358 5.65252 5.50634 4.40909 6.70767 0C6.45654 0.0565781 6.22104 0.127664 6 0.211359V12C8.70195 12 10.8923 9.80965 10.8923 7.1077C10.8923 7.01473 10.8894 6.92243 10.8843 6.83074Z" fill="#FF421D"/>
+                  <path d="M3.85437 9.85445C3.85437 11.0394 4.81498 12 5.99993 12C7.18489 12 8.14549 11.0394 8.14549 9.85445C8.14549 9.22021 7.87032 8.65026 7.43281 8.25747C6.60326 9.38446 5.42112 7.67491 6.3424 6.42648C6.3424 6.42648 3.85437 6.73827 3.85437 9.85445Z" fill="#FBBF00"/>
+                  <path d="M8.14556 9.85445C8.14556 9.22021 7.87038 8.65026 7.43288 8.25747C6.60333 9.38446 5.42119 7.67491 6.34247 6.42648C6.34247 6.42648 6.20728 6.44348 6 6.50889V12C7.18495 12 8.14556 11.0394 8.14556 9.85445Z" fill="#FFA900"/>
+                </g>
+                <defs>
+                  <clippath id="clip5">
+                    <rect width="12" height="12" fill="white"/>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <img src="images/beef-burger.png" alt="beef burger" class="popular__slider__item__img">
+            <h1 class="popular__slider__title">Beef Burger</h1>
+            <div class="popular__slider__desc">
+              <p class="popular__slider__desc__p">Double Beef</p>
+              <img src="images/cheese.png" alt="cheese">
+            </div>
+            <div class="popular__slider__price">
+              <p class="popular__slider__price__symbol">$</p>
+              <p class="popular__slider__price__p">6.59</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="offer">
+      <h1 class="title offer__title">Offer of Day</h1>
+      <div class="offer__item">
+        <p class="offer__discount">20%</p>
+        <img src="images/steak.png" alt="">
+        <div class="offer__content">
+          <h1 class="offer__content__title">Ribeye Steak</h1>
+          <div class="offer__content__stars">
+            <img src="images/star.svg" alt="star">
+            <img src="images/star.svg" alt="star">
+            <img src="images/star.svg" alt="star">
+            <img src="images/star.svg" alt="star">
+            <img src="images/star.svg" alt="star">
+          </div>
+          <div class="offer__content__price__btn">
+            <div class="offer__content__price">
+              <p class="offer__content__price__symbol">$</p>
+              <p class="offer__content__price__p">34</p>
+            </div>
+            <a href="#!" class="offer__content__btn">Add to Card</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <a href="#!" class="footer__link active"><i class="far fa-home footer__i"></i></a>
+    <a href="#!" class="footer__link"><i class="far fa-heart footer__i"></i></a>
+    <a href="#!" class="footer__link big"><i class="far fa-search footer__i footer__i__big"></i></a>
+    <a href="#!" class="footer__link"><i class="far fa-bell footer__i"></i></a>
+    <a href="#!" class="footer__link"><i class="far fa-shopping-cart footer__i"></i></a>
+  </footer>
+  
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
