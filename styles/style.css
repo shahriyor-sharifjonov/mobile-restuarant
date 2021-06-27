@@ -552,14 +552,3 @@ body {
 .footer__i__big {
   color: #fff;
 }
-
-.product__header {
-  padding-top: 40px;
-}
-
-.product__header__back__button {
-  -webkit-box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.25);
-  font-size: 40px;
-  color: #fff;
-}
